@@ -1,0 +1,223 @@
+框架搭建：
+id对应#
+class对应点
+如果写一个div带有class属性名称的可以用div加tab，如div.panel>div.title+div.content+div.function加tab
+代码狂框架
+1.
+2.css结构规划
+	1.通用的css common 。通用cs可以在多张页面使用同样的css文件，通过一次书写，可以在通用的各个页面使用
+3.如何解决白边问题
+	body中marign：0
+总结7：
+	1.掌握网站中css结构规划
+	2.网页开发的基本结构，写好后，往框架中填充即可
+	3.可能出现多张页，要有相同的意识规划
+	
+导航栏开发：
+1.链接标签<a>
+	基本距离<a href="index.html">首页</a>
+	herf属性：链接的目标，如果要链接外部网站，那么要加http://www.xx.xx
+	target属性：使用_blank，可以打开鑫窗口连接出去。默认如果没写，意味着在本窗口打开链接
+总结8：
+	1.掌握连接标签<a>承兑出现，中间写链接的文字
+	2.href属性
+	3.target属性
+导航栏Css美化：
+1.css基础
+	html中的class属性对应css中的符号.
+	html中的id属性对应css中的#
+	html中的层次结构，每一层对应到css中用空格隔开
+2。回看几个基础的css属性，比如字体大小，浮动，背景颜色，内边距
+3.掌握css的书写框架
+图片轮播案例：
+1.img 标签  用来显示图片的标签
+2.<script>标记  
+	这里开始写js的代码，用来控制网页上html标签的逻辑，俗称DOM控制
+	document.getElementById("对应html标签中id的值");返回一个对应的标签对象
+	innerHTML表示某个容器内部所有的html代码
+3.符号对应
+	空格对应到url中是%20
+总结9：
+1.学会下载制作图片，写js
+2.setlnterval 来做定时器 参数1是个函数，参数2是个始终，单位是毫秒
+3.fanction（）这是在匿名函数，可以直接被调用
+js基础：
+1.所有的js可以放在js文件中，可以放在<script>标签中
+2.变量声明var 关键词 可以代表一种可变类型，js是一种弱语言
+3.声明变量的格式 var 变量名称：
+4.通过getElementById获取html内部数据
+5.document。write（"直接输入“）
+总结：
+1.注意只有数值类型的变量才可以进行数学运算
+2.掌握js变量声明以及html元素的获取与写入
+3.技术的另一种写在网页端与html混写的写法
+新闻框架：
+1.html标题标签h1 h2 h3 h4 h5 h6特点是默认加粗、有上下空白、默认有换行
+2.padding内边距、border-bottom下边框、float：left浮动往往和html中父级节点的overflow：auto；连用，避免跟随父级的高度
+总结：
+	1.首先要搭建网页html的结构
+	2.结构首先要观察，分析出有几块结构
+	3.要实践去写，写一部观察一部
+背景图片：
+1.background—imag设置背景
+2.设置背景图片结合容器的高度
+3.background-repeat: no-repeat;北京不重复
+4.background-position: bottom;背景图片距下
+总结：
+	1.需要实战去写
+	2.掌握css背景去写
+iframe:
+1html之中存在网页
+2.<iframe id="ifweb"  style="width:100%;height:500px"src="www.baidu.com"></iframe>   可以直接在某个容器中用style属性直接写css文件
+但是不推荐
+3.&nbsp；代表空格，这个是html代码中的空格符号
+总结：
+	1.iframe标签可以在表单提交处理信息，可以用在访问其他网址，内容可以呈现在html显示出来的风格
+	2.css的内行样式写法
+	3.js的页面级使用《script》标签
+	4.简单的文本输入以及JS处理
+仿QQ登录：
+1.css  border-width  边框宽度、border-radius边框圆角‘placehodlder是html的特性
+总结：
+	1.分析网页项目结构
+	2.尽量使用css特性来使用页面
+form表单
+1.表单作用
+	a.用来提交用户信息给服务器	
+	b。可以存放的标签：input type 各种类型、select option 下拉列表、textarea文本域，可以多行
+2.css.控制标签内的文本居中text-align: center
+3.<br/>换行标签、<select name="counrty" >  </select>下拉框外壳   <option value="cn">中国</option>内容项目
+4.单选框type使用radio的时候，name属性值如果相同，代表同一组，同一组的单选框标签同一时间只能选择一个
+5.  .wapper form input.op选择class属性值为op的input标签
+6.  .wapper form .txt,.wapper form select  这里的逗号标签前后元素同时受到影响
+总结：
+	1.掌握表单常用元素
+	2.学会文件结构 css美化页面，文件关联
+	3.form表单可以存放需要交给服务器的内容，form表单提交的是，内部含有name标签的元素给服务器页面，action对应的页面
+	4.数据提交方式method的值为post的时候可以提交大量的数据，如果数据量少用get
+富文本框：
+扁平化设计 博客网站：
+1.降低移动设备的硬件需求，延长待机时间；
+2.可以更加简单直接的将信息和事物的工作方式展示出来，减少认知障碍的产生；
+3.随着网站和应用程序在许多平台涵盖了越来越多不同的屏幕尺寸，创建多个屏幕尺寸
+和分辨率的skeuomorphic设计既繁琐又费时。设计正朝着更加扁平化的设计，你可以
+一次保证在所有的屏幕尺寸上它会很好看。扁平化设计更简约，条理清晰，最重要的一点是，更好的适应性。
+总结：
+	1.了解扁平化设计的理念
+	2.学会搭建基础厂字形结构
+data-数据自定义获取：
+1.说明：html标签一遍也会叫做html元素，简称元素；console.log( )函数用来输出js中的变量的值或者想看到文本的值，可以直接在浏览器的console窗体中看到；
+通过进入开发者模式f12来看到console窗体
+2.dataset实际是一个DOMSTRINGMAP,里面有json格式
+总结：	
+	1.dom数据的存取在html5中直用data-自定义属性来存储数据的值
+	2.数据的获取需要配合js来获取
+	3.dom中存储数据一般是临时使用的数据
+	4.使用data-自定义属性的数据可以通过js直接复制来直接改变
+制作头部：
+1.<header><h1><span class="logo">o</span>彭雄博客</h1></header>
+2.掌握html5核心标签格式化，目的是兼容性
+3.做到响应式设计
+4.掌握触发式动画使用方式
+5.阴影效果
+导航栏：
+1.nav标签做到导航栏背景
+2.使用ui-li来制作具体的的导航内部按钮菜单
+3.掌握导航布局的居中方式（分为水平居中和垂直居中）
+4.伪类出发背景的效果
+图标的应用：
+1.阿里巴巴矢量图标库https://www.iconfont.cn/；ps自己做
+移动端的兼容性的调整：
+1.vlewport的使用	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> 
+2.绝对定位的使用 display:relative找到父级的相对位置；position：开始绝对定位，然后结合使用top/left/bottom/right
+3.media的使用
+	@media (max-width:600px) 
+	{
+	#wapper>nav{overflow: scroll;}
+	}
+素材处理技巧：
+1.直接用ppt来美化和抠图【图片处理技巧】
+2.颜色调节，利用浏览器的颜色调节方式，时候hsl方式调试，颜色值（0-360），饱和度（0-100%),亮度（0-100%）【颜色处理技巧】
+section和aside：
+1.尾部版权部分字体出路和位置结构处理
+2.中间主要内容部分总体规划
+注意点:
+1.CSS注释
+2.网页各模块格局的调整需要根据实际设备屏幕大小去调整适应
+3.采用box-flex特性系列结合max-width使得页面采用弹性布局
+4.扁平化设计结合响应式设计使得网页的适配性更强
+元素获取的注意点：
+1.var container=document.getElementById("container");/*返回的是一个元素节点*/
+2.var pics=comtent[0].getElementsByClassName("pics");/*返回的是一个数组，数组的第一个索引为0*/
+3.if(imgIndex>imgCount)  imgIndex=1;//图片来回切换的判断
+总结;
+1。使用js来控制html节点的功能，一定要注意返回的数是一个元素还是多个元素，还是没有元素
+2.图片的结构规划
+3.图片的轮回判断
+4.善于使用console.log查看元素
+logo一直悬挂的css：
+1.使得header部分使用position：fixed
+2.固定部分的框架横向全屏显示，固定悬浮代码，
+	position：fixed；
+	z-index：10；这个div的层显示优先级，数字越大越优先显示
+	top：0；
+	left：0；
+	right：0；当这两个值都是0的时候，将横向全屏显示
+3.调整contaner开始的位置
+	margin-top值为toper的高度
+logo总结：
+1.调整头部的固定位置
+2.根据需要分析调试代码结构
+制作本周热门排行：
+1.分析模块框架：weekrank——title（标题）和cont（模块内所有文章）
+2.写CSS 每篇文章的布局应该是使用float实现左右对齐
+总结：
+1.提高分析模块的能力
+2.代码多调试，多观察，多使用技巧来减轻工作量
+总结：
+1.掌握模块的结构分析
+2.css如何入手可以单独制作属于一个自己的模块样式
+3.可以使用旋转功能，模拟使用一个对话框的样式
+界面弹性的调整：
+1.#wapper>#container>.content的display改成box
+总结：
+1.找到页面中的bug，尽可能通过右键检查的方式看html和css找到问题
+2.代码调试的时候，可以将先没有用的代码剪切到一个记事本中最后在保存起来，可以让代码更清晰简洁，更容易找到问题的解决方法
+3.扁平化设计原则要简洁
+4.图片可以去阿里巴巴矢量图网站去找
+
+JS教程：
+1.元素对象.addEventListener（事件的名称，事件调用的函数，false/ture）说明：第三个函数默认为false，表示不向下传递事件，如果为ture，那么将会把这个事件继续用到这个元素的子元素的同样的事件中
+2.插入DOM节点元素使用的函数方法：myArticle.insertAdjacentHTML("afterend",art); 元素对象.insertAdjacentHTML（插入类型方式，string类型的html）；
+3.JS中的查询元素选择器：获取某个元素节点，使用document.querySelector（选择器），这里的选择器类似于css选择器来选择元素，document.querySelector方法最后返回的是一个元素
+4.如何使得一个字符串在js中分行写，只需要在每行后面增加一个\，注意在这个符号后面不能加空格，负责就会无效
+总结：
+1.使用js插入元素的dom节点方法
+2.掌握元素的监听方法addEventListene
+3.掌握addEventListene  document.querySelector（选择器）
+4.js获取网页title标题：document.querySelector("title").innerText;
+5.如何获取多个匹配元素document.querySelector返回所有的满足情况的节点元素
+总结：
+1.掌握js函数的写法，可以传递参数以及函数的调用
+2.掌握js中for循环
+3.掌握if语句用法
+4.掌握queryselector和queryselectorall的用法
+设计个性通用面板：
+1.观察设计的模仿对象，
+2.设计html结构
+3.css代码结构样式
+4.分析出公用部分，提取出特殊部分
+
+自动生成数字：
+1.JS随机数：Math.random()返回0-1之间的数
+2.举例生成一个[0,255)之间的随机数，math.random（）
+3.获取需要的html元素：  document.querySelectorAll("#container .content>aside .pxNotecloud .content table tr td");
+4.js的for循环：
+5.JavaScript设置html属性：对象.setAttribute(属性，属性值)//设置属性
+				对象.getAttriibute(属性)//获得属性
+				对象.removeAttribute(属性）//移除属性
+以上操作都是针对html元素
+总结：
+1.js的基础操作
+2.不要用固有的思维放弃table，这个元素可以用在简单的布局上面，一般用字啊表单、文字对象
+3.html的dom对象的属性的增删改

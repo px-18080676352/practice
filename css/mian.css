@@ -1,0 +1,354 @@
+#wapper {
+	background-color: #ccc;
+}
+#wapper>.toper {
+	position: fixed;
+	z-index: 10;
+	/*解决固定后脱离数据流的问题*/
+	top: 0;
+	left: 0;
+	right: 0;
+}
+#wapper>.toper>header {
+	position: relative;
+	background-color: hsl(46, 8%, 80%);
+	/*（颜色，亮度，饱和度)*/
+	width: 100%;
+	height: 80px;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-moz-box-pack: center;
+	/*box-pack*/
+	-webkit-box-pack: center;
+	/* cursor:pointer;/*鼠标点上去不动*/
+	/* text-shadow: gray  100px 10px; /*阴影* */
+}
+#wapper>.toper>header img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	left: 10px;
+	transform: translateY(-50%);
+	opacity: 0.9;
+	
+}
+#wapper>.toper>header.logo {
+	font-family: 'Courier New', Courier, monospace;
+	/*font-family:"ljyfont";到时候这里改一下字体logo*/
+	color: white;
+	font-size: 50px;
+}
+
+#wapper>.toper>header>h1 {
+	color: white;
+
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	transition-duration: 3s;
+	/*动画的过度时间*/
+	cursor: pointer;
+	text-shadow: hotpink 10px 5px 50px;
+	font-family: "楷体";
+	font-size: 25px;
+
+
+}
+
+#wapper>.toper>header>h1:hover {
+	/*鼠标放上去的动作*/
+	transform: translateX(-100px);
+	left: 10px;
+	/*box-shadow: purple 2px 2px  10px;变成框框紫色*/
+	text-shadow: purple 2px 2px 10px;
+}
+
+/*导航栏*/
+#wapper>.toper>nav {
+	background-color: #595959;
+	color: white;
+	height: 50px;
+	
+
+
+}
+
+/* 移动端处理 */
+@media (max-width:600px) {
+	#wapper>.toper>nav {
+		/* overflow: scroll; */
+	}
+}
+
+#wapper>.toper>nav ul {
+	/*border: 50px solid  crimson*/
+	/*边框：像素  线型  颜色*/
+	max-width: 960px;
+	min-width: 600px;/*最小距离*/
+	margin: auto;
+	height: 60px;
+	position: relative;
+	
+}
+
+#wapper>.toper>nav li {
+	display: inline-block;
+	/*纵向变横向*/
+	height: 40px;
+	line-height: 50px;
+	padding: 5px 10px;
+	/*width:100px;
+	text-align: center;每个宽度一样100像素*/
+	max-width: 100px;
+	text-align: center;
+	transition: all 0.5s;
+	position: relative;
+}
+#wapper>.toper>nav li ::before{
+	content:"";
+	background-color: aqua;
+	border-bottom: 5px  solid  red;
+	position: absolute;
+	bottom: 0;
+	width:0;
+	left:100%;
+	transition: all 0.5s;
+}
+#wapper>.toper>nav li:hover,
+.item_active {
+	background-color: hsl(100, 80%, 70%);
+}
+#wapper>.toper>nav li:hover::before{/* 从左往右的样式 */
+	
+	left:0;
+	width:100%;
+	
+}
+#wapper>.toper>nav li:hover~li::before{/* 从右往左运动的样式 */
+	left: 100%;
+	width:0;
+}
+#wapper>.toper>.toper>nav a {
+	color: white;
+	text-decoration: none;
+	/*去下划线*/
+
+}
+
+/* 查找按钮 */
+#wapper>.toper>nav>ul>button {
+
+	background-color: transparent;
+	border-width: 0;
+	position: absolute;
+	background-image: url(../img/lookup.png);
+	background-size: 100% 100%;
+	width: 22px;
+	height: 22px;
+	top: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#wapper>.toper>nav>ul>button:hover {
+	background-image: url(../img/lookup2_purpul.png);
+}
+
+/* 开始正文模块 */
+#wapper>#container {
+	/*默认水平横向布局*/
+	background-color: #ccc;
+	max-width: 960px;
+	position: relative;
+	/* overflow: auto; */
+	display: -moz-box;
+	display: -webkit-box;
+	-moz-box-orient: vertical;
+	/*改为纵向布局*/
+	-webkit-box-orient: vertical;
+	margin: auto;
+	margin-top: 130px;
+	/* border: 1px solid red; */
+	/* height:800px; */
+}
+
+/* }广告栏 */
+#wapper>#container>.ad {
+	background-color: azure;
+	padding: 5px 10px;
+	/*先上下后左右 */
+	position: relative;
+	display: -moz-box;
+	display: -webkit-box;
+}
+
+#wapper>#container>.ad>img {
+	margin-right: 10px;
+	position: absolute;
+	top: 5px;
+	/*从上到下移动*/
+}
+
+#wapper>#container>.ad>marquee {
+	max-width: 900px;
+	margin-top: 15px;
+	margin-left: 35px;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	display: -moz-box;
+	display: -webkit-box;
+}
+
+/*主要内容*/
+#wapper>#container>.content {
+	display: -moz-box;
+	display: -webkit-box; */
+	margin-top: 10px;
+	
+
+}
+
+#wapper>#container>.content section {
+	max-width: 695px;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+}
+
+/* 图片轮播
+#wapper>#container>.content section .pics {
+	/* background-color: white; */
+}
+
+#wapper>#container>.content section .pics img {
+	width: 100%;
+
+}
+/* 本周排行 */
+#wapper>#container>.content section .weekrank {
+	background-color: white;
+	margin-top: 10px;
+	padding:10px;
+}
+#wapper>#container>.content section .weekrank .title{
+	color:hsl(212, 100%, 70%);
+	border-bottom:1px solid goldenrod;
+	padding-bottom:10px;
+}
+#wapper>#container>.content section .weekrank .art {
+	overflow: auto;
+	margin-top: 10px;
+}
+#wapper>#container>.content section .weekrank .art .left{
+	float:left;
+}
+#wapper>#container>.content section .weekrank .art .left span{
+	background-color: palevioletred;
+	color:white;
+	padding-left:10px;
+	padding-right: 10px;
+}
+#wapper>#container>.content section .weekrank .art:nth-child(2) .left span{
+	background-color: greenyellow;
+}
+#wapper>#container>.content section .weekrank .art:nth-child(3) .left span{
+	background-color: skyblue;
+}
+#wapper>#container>.content section .weekrank .art .right{
+	float:right;
+}
+#wapper>#container>.content section .weekrank .art .right span{
+	color:pink;
+}
+/* 更多:按钮 */
+#wapper>#container>.content section .pager{
+	text-align: center;
+	background-color: white;
+	margin-top: 10px;
+	padding: 10px;
+}
+#wapper>#container>.content section .pager>button{
+	border-width: 0;
+	padding: 5px 10px;
+}
+#wapper>#container>.content section .pager>button:hover{/* 鼠标放上去的伪类 */
+	cursor: pointer;
+}
+
+/* 侧边 */
+#wapper>#container aside {
+	max-width: 260px;
+	/* height: 500px; */
+	/* border: 1px solid blue; */
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	margin-left: 5px;
+	
+}
+/* 侧边栏 */
+#container .content>aside .share{
+	background-color: white;
+	padding: 10px;
+}
+#container .content>aside .share img{
+	margin-right: 10px;
+	width: 30px;
+	cursor: pointer;
+	/* box-shadow: aquamarine 1px 1px 10px; */
+}
+/* 下载 */
+#container .content>aside .pxdownload ul{
+	
+	max-width: 200px;
+	margin-left: 10px;
+}
+#container .content>aside .pxdownload ul li{
+	
+}
+/* 绿色风格样式 */
+#container .content>aside .pxpanel .titleGreen{
+	color:green;
+}
+/* 粉红风格 */
+#container .content>aside .pxpanel .titlePink{
+	color:pink
+}
+/* 标签云 */
+#container .content>aside .pxNotecloud .content table{
+	width: 100%;
+}
+#container .content>aside .pxNotecloud .content table tr td{
+	background-color: gold;
+	color: white;
+	padding: 5px;
+}
+
+/* 移动端处理 */
+@media (max-width:420px) {
+	#wapper>#container aside {
+		display: none;
+	}
+
+}
+
+/*当他的宽度小于420时候，aside隐藏*/
+
+/*版权设置*/
+#wapper>footer {
+	background-color: #595959;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+}
+
+#wapper>footer>section {
+	color: white;
+	max-width: 960px;
+	margin: auto;
+	line-height: 50px;
+	/*垂直居中*/
+}

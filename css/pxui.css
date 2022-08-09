@@ -1,0 +1,75 @@
+/* 文章模块 */
+.pxarticle{
+	/* border: 1px solid red; */
+	background-color: white;
+	margin-top: 10px;
+	padding: 10px;
+}
+.pxarticle:hover{
+	box-shadow: palegreen 5px 5px 50px;/*x y 模糊偏移程度*/
+	
+	
+}
+.pxarticle>header{
+	overflow: auto;
+}
+.pxarticle>header>.st{
+	position: relative;
+	/* border: 1px solid red; */
+	float:left;
+}
+.pxarticle>header>.st>span{
+	background-color: indianred;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pxarticle>header>.st>div{
+	width: 10px;
+	height: 10px;
+	background-color: indianred;
+	position: absolute;
+	right: -5px;
+	top:5px;
+	transform: rotate(45deg);
+}
+.pxarticle>header>h3{
+	margin-left:10px;
+	float:left;
+}
+.pxarticle>section{
+	/* border:1px solid red; */
+	margin-top: 10px;
+	overflow: auto;
+}
+.pxarticle>section>img{
+	max-width:100px;
+	float: left;
+	margin-right:10px ;
+}
+.pxarticle>footer{
+	text-align: right;
+}
+.pxarticle>footer .time{
+	color: hsl(333, 85%, 45%);
+}
+.pxarticle>footer .eye{
+	color: hsl(54,45%,90%);
+}
+/* 面板模块样式 */
+.pxpanel{
+	background-color: white;
+	margin-top: 10px;
+	padding: 10px;
+	min-height: 100px;
+	
+	
+}
+.pxpanel .title{
+	color:hsl(145,60%,54%);
+	border-bottom: 4px solid lightgray;
+	padding-bottom: 10px;
+}
+.pxpanel .content{
+	padding-top: 10px;
+}

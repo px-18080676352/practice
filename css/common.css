@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: hsl(240, 0%, 30%);
+	font-size:15px;
+
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:hsl(240, 60%, 90%);
+	text-decoration:underline;
+}
+h1{
+	font-size: 40px;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+figure,
+figcaption,
+footer,
+hgroup {
+	display: block;
+}
